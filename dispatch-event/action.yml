@@ -4,17 +4,17 @@ inputs:
   github_token:
     description: The GitHub token.
     default: ${{ github.token }}
-    required: true
+    required: false
   Organization:
     description: Organization.
-    required: true
+    required: false
   Repository:
     description: Repository.
-    required: true
+    required: false
     
   data:
     description: The dispatch event data.
-    required: true
+    required: false
 
 runs:
   using: 'composite'
