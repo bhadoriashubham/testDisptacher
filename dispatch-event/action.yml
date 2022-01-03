@@ -20,10 +20,3 @@ runs:
   using: 'composite'
   steps:
     - run: ls
-    
-    - run:  |          
-        go get -d -v ./...
-        go install -v ./...
-    - run: |
-         ls
-         go run send-dispatch-event.go
