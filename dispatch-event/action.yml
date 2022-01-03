@@ -21,3 +21,12 @@ runs:
   steps:
     - run: ls
       shell: bash
+ 
+    - run:  |          
+        go get -d -v ./...
+        go install -v ./...
+      shell: bash
+      
+    - run: |
+         go run send-dispatch-event.go
+      shell: bash
