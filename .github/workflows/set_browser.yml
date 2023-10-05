@@ -9,3 +9,4 @@ jobs:
         steps:
             - uses: browser-actions/setup-chrome@v1
             - run: chrome --version
+            - run: chrome www.google.com
